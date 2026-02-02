@@ -43,7 +43,7 @@ function clearHistory() {
 
       {quizResults.length === 0 && (
         <div className="bg-white p-8 rounded-lg shadow-sm text-center border border-gray-200">
-          <p className="text-xl text-gray-500">No quiz attempts yet. Take a quiz to see results here!</p>
+          <p className="text-xl text-gray-500">No quiz attempts.</p>
         </div>
       )}
 

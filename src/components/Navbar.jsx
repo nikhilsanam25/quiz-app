@@ -19,9 +19,9 @@ export default function Navbar() {
 
           
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className="hover:text-green-400">Home</Link>
-            <Link to="/takequiz" className="hover:text-green-400">Take Quiz</Link>
-            <Link to="/results" className="hover:text-green-400">View Results</Link>
+            <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-green-400">Home</Link>
+            <Link to="/takequiz" onClick={() => setIsOpen(false)} className="hover:text-green-400">Take Quiz</Link>
+            <Link to="/results" onClick={() => setIsOpen(false)} className="hover:text-green-400">View Results</Link>
           </div>
 
           

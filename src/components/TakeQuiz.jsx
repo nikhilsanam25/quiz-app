@@ -184,9 +184,10 @@ export default function TakeQuiz() {
         </div>
 
         <div className="w-full sm:w-auto mt-6 sm:mt-0">
-          <button 
+          <button
             onClick={fetchQuiz}
-            className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto font-semibold"
+            disabled={questions.length > 0}
+            className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Start Quiz
           </button>
